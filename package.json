@@ -1,0 +1,23 @@
+{
+  "name": "Dimensions",
+  "description": "Karel Vuong",
+  "version": "0.0.1",
+  "homepage": "https://github.com/karelvuong/dimensions",
+  "author": {
+    "name": "Karel Vuong",
+    "url": "http://karelvuong.github.io/"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karelvuong/dimensions.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-recess": "~0.6.1"
+  }
+}
