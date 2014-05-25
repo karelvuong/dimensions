@@ -1,0 +1,49 @@
+header {
+    background: #333;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    z-index: 100;
+
+    .title {
+        color: #FFF;
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 20px;
+
+        &:hover { text-shadow: 0 0 10px #fff; }
+        &.active { text-shadow: 0 0 20px #fff; }
+    }
+
+    ul {
+        font-size: 0;
+        list-style: none;
+
+        li { display: inline-block; }
+
+        a {
+            color: rgba(#fff, 0.5);
+            display: inline-block;
+            font-size: 12px;
+            padding: 0 20px;
+
+            &:hover,
+            &.active {
+                text-decoration: none;
+            }
+
+            &:hover { color: rgba(#fff, 0.75); }
+            &.active { color: #fff; }
+
+        }
+    }
+
+    a {
+        font-weight: 700;
+        line-height: 50px;
+
+        @include transition(all ease-in-out 0.15s);
+    }
+}
