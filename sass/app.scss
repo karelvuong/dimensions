@@ -77,7 +77,6 @@ h2 {
 h3 {
     font-size: 30px;
     letter-spacing: -2px;
-    margin-bottom: 10px;
 }
 
 p {
@@ -196,6 +195,8 @@ ul, ol {
     max-width: 100%;
 }
 
+.placeholder-round { border-radius: 100%; }
+
 .secondary {
     height: 50px;
     line-height: 50px;
@@ -244,11 +245,6 @@ ul, ol {
             opacity: 1;
             text-decoration: none;
         }
-    }
-
-    .action {
-        font-weight: 700;
-        text-decoration: none;
     }
 }
 

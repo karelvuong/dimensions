@@ -32,13 +32,103 @@ $clr-blackberry: #000000;
     }
 }
 
-.bg-googleplus { background-color: $clr-googleplus !important; }
-.bg-instagram { background-color: $clr-instagram !important; }
-.bg-linkedin { background-color: $clr-linkedin !important; }
-.bg-pinterest { background-color: $clr-pinterest !important; }
-.bg-twitter { background-color: $clr-twitter !important; }
-.bg-vimeo { background-color: $clr-vimeo !important; }
-.bg-youtube { background-color: $clr-youtube !important; }
+.bg-googleplus {
+    background-color: $clr-googleplus !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-googleplus;
+            background: #fff;
+        }
+    }
+}
+
+.bg-instagram {
+    background-color: $clr-instagram !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-instagram;
+            background: #fff;
+        }
+    }
+}
+
+.bg-linkedin {
+    background-color: $clr-linkedin !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-linkedin;
+            background: #fff;
+        }
+    }
+}
+
+.bg-pinterest {
+    background-color: $clr-pinterest !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-pinterest;
+            background: #fff;
+        }
+    }
+}
+
+.bg-twitter {
+    background-color: $clr-twitter !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-twitter;
+            background: #fff;
+        }
+    }
+}
+
+.bg-vimeo {
+    background-color: $clr-vimeo !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-vimeo;
+            background: #fff;
+        }
+    }
+}
+
+.bg-youtube {
+    background-color: $clr-youtube !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-youtube;
+            background: #fff;
+        }
+    }
+}
 
 .bg-android { background-color: $clr-android !important; }
 .bg-apple { background-color: $clr-apple !important; }
@@ -46,17 +136,15 @@ $clr-blackberry: #000000;
 
 .clr-white { color: #FFFFFF !important; }
 .clr-facebook { color: $clr-facebook !important; }
+.clr-googleplus { color: $clr-googleplus !important; }
+.clr-instagram { color: $clr-instagram !important; }
+.clr-linkedin { color: $clr-linkedin !important; }
+.clr-twitter { color: $clr-twitter !important; }
+.clr-youtube { color: $clr-youtube !important; }
 
-@mixin clr-hover($colour, $type: lighten, $percentage: 10%) {
-    color: $colour;
-    &:hover {
-        @if $type == lighten {
-            color: lighten($colour, $percentage);
-        } @else if $type == darken {
-            color: darken($colour, $percentage);
-        }
-    }
-}
+//
+//
+//
 
 @mixin animation($animation-property, $method) {
     -webkit-animation: $animation-property $method;
