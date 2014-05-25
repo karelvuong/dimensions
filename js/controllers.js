@@ -17,7 +17,7 @@ angular.module('dimensions.controllers', [])
             "name": "Google+",
             "class": "bg-googleplus",
             "date": "May 24, 2014",
-            "state": "social.facebook"
+            "state": "social.googleplus"
         },
         {
             "name": "Instagram",
