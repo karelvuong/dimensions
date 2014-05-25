@@ -1,18 +1,18 @@
 <div ui-view>
-    <div class="container search">
+    <div class="container secondary">
         <i class="fa fa-search"></i> <input type="text" ng-model="search.name" placeholder="Search...">
     </div>
 
     <a ui-sref="{{ network.state }}" class="cheatsheet {{ network.class }}" ng-repeat="network in socialNetworks | filter:search.name">
         <div class="inner container text-center">
-            <h1 class="clr-white">{{ network.name }}</h1>
-            <p class="clr-white">Last updated on {{ network.date }}</p>
+            <h2 class="clr-white">{{ network.name }}</h2>
+            <p class="clr-white">Last updated on {{ network.date }}.</p>
         </div>
     </a>
 
     <section class="cheatsheet empty" ng-show="(socialNetworks | filter:search.name).length == 0">
         <div class="inner container text-center">
-            <h1>No results.</h1>
+            <h2>No results.</h2>
         </div>
     </section>
 </div>

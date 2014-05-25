@@ -18,7 +18,20 @@ $clr-blackberry: #000000;
 //
 .bg-gray { background-color: $clr-gray !important; }
 
-.bg-facebook { background-color: $clr-facebook !important; }
+.bg-facebook {
+    background-color: $clr-facebook !important;
+
+    button {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover {
+            color: $clr-facebook;
+            background: #fff;
+        }
+    }
+}
+
 .bg-googleplus { background-color: $clr-googleplus !important; }
 .bg-instagram { background-color: $clr-instagram !important; }
 .bg-linkedin { background-color: $clr-linkedin !important; }
@@ -32,6 +45,7 @@ $clr-blackberry: #000000;
 .bg-blackberry { background-color: $clr-blackberry !important; }
 
 .clr-white { color: #FFFFFF !important; }
+.clr-facebook { color: $clr-facebook !important; }
 
 @mixin clr-hover($colour, $type: lighten, $percentage: 10%) {
     color: $colour;

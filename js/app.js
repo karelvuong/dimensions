@@ -2,9 +2,10 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('dimensions', [
-    'ngRoute',
+//    'ngRoute',
     'ui.router',
-    'dimensions.controllers'
+    'dimensions.controllers',
+    'dimensions.directives'
 ])
 
 .config(function($stateProvider, $urlRouterProvider) {

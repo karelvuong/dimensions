@@ -1,7 +1,5 @@
 'use strict';
 
-/* Controllers */
-
 angular.module('dimensions.controllers', [])
 .controller('ApplicationController', function($scope) {
 })
