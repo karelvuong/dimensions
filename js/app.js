@@ -19,7 +19,7 @@ angular.module('dimensions', [
     .state('social', {
         url: "/social",
         controller: "SocialController",
-        templateUrl: "partials/social/_social.html",
+        templateUrl: "partials/_social.html",
     })
     .state('social.facebook', {
         url: "/facebook",
