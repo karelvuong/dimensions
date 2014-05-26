@@ -8,7 +8,8 @@ angular.module('dimensions', [
     'dimensions.directives'
 ])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
+    $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise("/");
 
     $stateProvider
