@@ -208,7 +208,11 @@ ul, ol {
         line-height: 50px;
         position: absolute;
 
-        &.fa-folder { cursor: pointer; }
+        &.fa-folder {
+            cursor: pointer;
+
+            &:hover:before { content: "\f07c"; }
+        }
     }
 
     input {
@@ -287,6 +291,8 @@ ul, ol {
 
 .masthead,
 .text {
+    h3 { margin-bottom: 10px; }
+
     p {
         font-size: 20px;
         margin: 0 auto;
