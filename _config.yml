@@ -1,5 +1,0 @@
-name:           Dimensions
-markdown:       redcarpet
-pygments:       true
-highlighter:    pygments
-exclude:        ['less', 'node_modules', 'package.json', 'Gruntfile.js']
