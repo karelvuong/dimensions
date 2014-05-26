@@ -14,7 +14,7 @@ angular.module('dimensions', [
     $stateProvider
     .state('main', {
         url: "/",
-        templateUrl: "/partials/main.html"
+        templateUrl: "partials/main.html"
     })
     .state('social', {
         url: "/social",
