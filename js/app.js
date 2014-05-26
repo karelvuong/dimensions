@@ -26,6 +26,10 @@ angular.module('dimensions', [
         url: "/facebook",
         templateUrl: "/partials/social/facebook.html",
     })
+    .state('social.facebookDemo', {
+        url: "/facebook/demo",
+        templateUrl: "/partials/social/facebook.demo.html",
+    })
     .state('social.googleplus', {
         url: "/googleplus",
         templateUrl: "/partials/social/googleplus.html",

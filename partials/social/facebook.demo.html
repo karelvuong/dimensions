@@ -1,0 +1,17 @@
+<div class="secondary bg-facebook">
+    <div class="container">
+        <i ui-sref="social.facebook" class="fa fa-folder clr-white"></i>
+        <p class="links clr-white">
+            <strong>Disclaimer:</strong> This page is not affiliated with Facebook. All styles and designs were produced by the creative team at Facebook.
+        </p>
+    </div>
+</div>
+
+<div ng-controller="UploadController">
+    <form>
+        <input type="file" ng-file-select="onFileSelect($files)" >
+    </form>
+    <b>Preview:</b><br />
+    <i ng-hide="imageSrc">No image choosed</i>
+    <img ng-src="{{imageSrc}}" /><br/>
+</div>
