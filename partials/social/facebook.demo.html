@@ -13,25 +13,25 @@
 
 <div class="demo demo-facebook container sm-padding" ng-controller="UploadController">
     <div class="demo-inner text-center">
-        <div class="demo-facebook-header"></div>
+        <div class="header"></div>
 
-        <div class="demo-facebook-cover-container">
-            <label class="demo-facebook-cover"for="file-cover">
-                <img class="demo-facebook-cover-placeholder" src="holder.js/851x315/auto" holder ng-hide="fileCover">
-                <div class="demo-facebook-cover-uploaded" ng-style="{ 'background-image': 'url(' + fileCover + ')' }" ng-show="fileCover"></div>
+        <div class="cover-container">
+            <label class="cover"for="cover-uploader">
+                <img class="cover-placeholder" src="holder.js/851x315/auto" holder ng-hide="fileCover">
+                <div class="cover-uploaded" ng-style="{ 'background-image': 'url(' + fileCover + ')' }" ng-show="fileCover"></div>
             </label>
-            <input id="file-cover" type="file" ng-file-select="onFileSelect($files)">
+            <input id="cover-uploader" type="file" ng-file-select="onFileSelect($files)">
         </div>
 
-        <div class="demo-facebook-headline text-left">
-            <div class="demo-facebook-links">
+        <div class="headline text-left">
+            <div class="links">
                 <a class="active">Timeline</a>
                 <a>About</a>
                 <a>Photos</a>
                 <a>Friends <span>12 Mutual</span></a>
             </div>
-            <div class="demo-facebook-profile-container">
-                <img class="demo-facebook-profile-picture" src="holder.js/168x168/auto" holder>
+            <div class="profile-container">
+                <img class="profile-picture" src="holder.js/168x168/auto" holder>
             </div>
         </div>
 

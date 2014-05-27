@@ -343,7 +343,7 @@ ul, ol {
     &.demo-facebook {
         background: #E9EAED;
 
-        .demo-facebook-header {
+        .header {
             background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABUCAMAAACfvxb8AAAAeFBMV…XjhMaxtCPqxBmNolVc0Nxu6IuGMbUHuqNmsbF2rO2DJhg/RwEE6AR0V3kAAAAASUVORK5CYII=);
             background-repeat: repeat-x;
             background-size: 1px 42px;
@@ -355,25 +355,23 @@ ul, ol {
             position: relative;
         }
 
-        .demo-facebook-cover-uploader { display: none; }
+        #cover-uploader { display: none; }
 
-        .demo-facebook-cover-container {
+        .cover-container {
             cursor: pointer;
             display: inline-block;
             vertical-align: middle;
         }
 
-        .demo-facebook-cover {
-            .demo-facebook-cover-uploaded {
-                background-position: center center;
-                background-size: cover;
-                cursor: pointer;
-                height: 315px;
-                width: 851px;
-            }
+        .cover {
+            background-position: center center;
+            background-size: cover;
+            cursor: pointer;
+            height: 315px;
+            width: 851px;
         }
 
-        .demo-facebook-headline {
+        .headline {
             background: #fff;
             border-bottom: 1px solid #D3D6DB;
             border-right: 1px solid #D3D6DB;
@@ -384,7 +382,7 @@ ul, ol {
             position: relative;
             width: 851px;
 
-            .demo-facebook-links {
+            .links {
                 border-left: 1px solid #e9eaed;
                 display: block;
                 height: 43px;
@@ -420,7 +418,7 @@ ul, ol {
             }
         }
 
-        .demo-facebook-profile-container {
+        .profile-container {
             background-color: #fff;
             background: rgba(#000, .3);
             border-radius: 3px;
@@ -432,7 +430,7 @@ ul, ol {
             top: -143px;
             left: 15px;
 
-            .demo-facebook-profile-picture {
+            .profile-picture {
                 border: 4px solid #fff;
                 border-radius: 2px;
                 display: inline-block;
