@@ -338,7 +338,7 @@ ul, ol {
 }
 
 .demo {
-    border: 5px solid darken(#E9EAED, 10%);
+    border: 5px dashed darken(#E9EAED, 10%);
 
     &.demo-facebook {
         background: #E9EAED;
@@ -359,8 +359,12 @@ ul, ol {
 
         .cover-container {
             cursor: pointer;
-            display: inline-block;
+            display: block;
+            margin: 0 auto;
+            position: relative;
             vertical-align: middle;
+            width: 100%;
+            max-width: 851px;
         }
 
         .cover {
@@ -368,7 +372,8 @@ ul, ol {
             background-size: cover;
             cursor: pointer;
             height: 315px;
-            width: 851px;
+            width: 100%;
+            max-width: 851px;
         }
 
         .headline {
@@ -379,8 +384,9 @@ ul, ol {
             border-bottom-right-radius: 3px;
             border-bottom-left-radius: 3px;
             margin: 0 auto;
-            position: relative;
-            width: 851px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 851px;
 
             .links {
                 border-left: 1px solid #e9eaed;
@@ -427,8 +433,8 @@ ul, ol {
             width: 170px;
             padding: 1px;
             position: absolute;
-            top: -143px;
-            left: 15px;
+            bottom: -27px;
+            left: 16px;
 
             .profile-picture {
                 border: 4px solid #fff;

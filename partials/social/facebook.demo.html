@@ -2,7 +2,7 @@
     <div class="container">
         <i ui-sref="social.facebook" class="fa fa-folder clr-white"></i>
         <p class="links clr-white">
-            <strong>Disclaimer:</strong> This page is not affiliated with Facebook. All styles and designs were produced by the creative team at Facebook.
+            <strong>Disclaimer:</strong> All styles and designs were produced by the creative team at Facebook.
         </p>
     </div>
 </div>
@@ -11,30 +11,27 @@
     <h3>User</h3>
 </div>
 
-<div class="demo demo-facebook container sm-padding" ng-controller="UploadController">
-    <div class="demo-inner text-center">
-        <div class="header"></div>
+<div class="demo demo-facebook container sm-padding text-center" ng-controller="UploadController">
+    <div class="header"></div>
 
-        <div class="cover-container">
-            <label class="cover"for="cover-uploader">
-                <img class="cover-placeholder" src="holder.js/851x315/auto" holder ng-hide="fileCover">
-                <div class="cover-uploaded" ng-style="{ 'background-image': 'url(' + fileCover + ')' }" ng-show="fileCover"></div>
-            </label>
-            <input id="cover-uploader" type="file" ng-file-select="onFileSelect($files)">
+    <div class="cover-container">
+        <label class="cover"for="cover-uploader">
+            <img class="cover-placeholder" src="holder.js/851x315/auto" holder ng-hide="fileCover">
+            <div class="cover" ng-style="{ 'background-image': 'url(' + fileCover + ')' }" ng-show="fileCover"></div>
+        </label>
+        <input id="cover-uploader" type="file" ng-file-select="onFileSelect($files)">
+
+        <div class="profile-container">
+            <img class="profile-picture" src="holder.js/168x168/auto" holder>
         </div>
+    </div>
 
-        <div class="headline text-left">
-            <div class="links">
-                <a class="active">Timeline</a>
-                <a>About</a>
-                <a>Photos</a>
-                <a>Friends <span>12 Mutual</span></a>
-            </div>
-            <div class="profile-container">
-                <img class="profile-picture" src="holder.js/168x168/auto" holder>
-            </div>
+    <div class="headline text-left">
+        <div class="links">
+            <a class="active">Timeline</a>
+            <a>About</a>
+            <a>Photos</a>
+            <a>Friends <span>12 Mutual</span></a>
         </div>
-
-
     </div>
 </div>

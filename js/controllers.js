@@ -79,13 +79,12 @@ angular.module('dimensions.controllers', [])
     $scope.getFile = function () {
         fileReader.readAsDataUrl($scope.file, $scope)
         .then(function(result) {
-            $scope.imageSrc = result;
+            $scope.fileCover = result;
         });
     };
 });
 
 (function (module) {
-
     var fileReader = function ($q, $log) {
 
         var onLoad = function(reader, deferred, scope) {
