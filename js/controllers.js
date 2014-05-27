@@ -82,7 +82,8 @@ angular.module('dimensions.controllers', [])
             $scope.imageSrc = result;
         });
     };
-})
+});
+
 (function (module) {
 
     var fileReader = function ($q, $log) {
@@ -135,7 +136,6 @@ angular.module('dimensions.controllers', [])
         };
     };
 
-    module.factory("fileReader",
-                   ["$q", "$log", fileReader]);
+    module.factory("fileReader", ["$q", "$log", fileReader]);
 
 }(angular.module("dimensions")));
