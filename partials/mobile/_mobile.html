@@ -1,6 +1,9 @@
 <div ui-view>
     <div class="container secondary">
-        <i class="fa fa-search"></i> <input type="text" ng-model="search.name" placeholder="Search...">
+        <i class="fa fa-search"></i>
+        <div class="links">
+            <input type="text" ng-model="search.name" placeholder="Search...">
+        </div>
     </div>
 
     <a ui-sref="{{ os.state }}" class="cheatsheet {{ os.class }}" ng-repeat="os in mobileOS | filter:search.name">
