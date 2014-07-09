@@ -40,7 +40,7 @@
                     <a class="title" ui-sref="main" ui-sref-active="active"><i class="fa fa-cube"></i></a>
                 </div>
                 <ul class="pull-left">
-                    <li><a ui-sref="social" ui-sref-active="active">Social Networks</a></li>
+                    <li><a ui-sref="social" ng-class="{active: state.indexOf('social') != -1}">Social Networks</a></li>
                     <li><a ui-sref="mobile" ui-sref-active="active">Mobile Devices</a></li>
                 </ul>
                 <ul class="pull-right">
@@ -61,16 +61,16 @@
             </div>
         </footer>
 
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-route.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular.min.js"></script> -->
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-route.min.js"></script> -->
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script> -->
 
-<!--
+
         <script src="/js/lib/jquery-1.11.0.min.js"></script>
-        <script src="/js/lib/angular/angular.js"></script>
-        <script src="/js/lib/angular/angular-route.js"></script>
--->
+        <script src="/js/lib/angular.min.js"></script>
+        <script src="/js/lib/angular-ui-router.min.js"></script>
+
         <script src="/js/lib/holder.js"></script>
         <script src="/js/app.js"></script>
         <script src="/js/controllers.js"></script>

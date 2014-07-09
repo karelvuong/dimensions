@@ -8,6 +8,13 @@ angular.module('dimensions', [
     'dimensions.directives'
 ])
 
+.run(function($rootScope, $state){
+    $rootScope.$on("$viewContentLoaded", function(){
+        $('html body').scrollTop(0);
+        $rootScope.state = $state.$current.self.name;
+    });
+})
+
 .config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise("/");
@@ -24,11 +31,15 @@ angular.module('dimensions', [
     })
     .state('social.facebook', {
         url: "/facebook",
-        templateUrl: "/partials/social/facebook.html",
+        templateUrl: "/partials/social/facebook/_facebook.html",
     })
-    .state('social.facebookDemo', {
-        url: "/facebook/demo",
-        templateUrl: "/partials/social/facebook.demo.html",
+    .state('social.facebook.demo', {
+        url: "/demo",
+        templateUrl: "/partials/social/facebook/_demo.html",
+    })
+    .state('social.facebook.demo.user', {
+        url: "/user",
+        templateUrl: "/partials/social/facebook/user.html",
     })
     .state('social.googleplus', {
         url: "/googleplus",
