@@ -30,8 +30,6 @@ body {
     color: #000;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4;
-    overflow-x: auto;
-    overflow-y: hidden;
     position: relative;
     -webkit-font-smoothing: antialiased;
 }
@@ -76,7 +74,12 @@ h2 {
 
 h3 {
     font-size: 30px;
-    letter-spacing: -2px;
+}
+
+h4 {
+    color: #999;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 p {
@@ -100,7 +103,7 @@ a {
     &:hover { text-decoration: underline; }
 }
 
-strong { font-weight: 700; }
+strong { font-weight: 900; }
 em { font-style: italic; }
 
 hr {
@@ -199,15 +202,65 @@ ul, ol {
 
 .placeholder-round { border-radius: 100%; }
 
+.display-type-container {
+    border-bottom: 1px solid rgba(#000, 0.1);
+
+    .toggle {
+        color: #aaa;
+        display: inline-block;
+        font-size: 30px;
+
+        i {
+            margin-right: 10px;
+        }
+
+        &.active {
+            i:before {
+                content: "\f058";
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            i:before {
+                content: "\f192";
+            }
+        }
+    }
+}
+
+.has-secondary { padding-top: 40px; }
 .secondary {
-    height: 50px;
-    line-height: 50px;
-    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(#000, 0.1);
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &.facebook,
+    &.google {
+        a, i {
+            color: #fff;
+        }
+    }
+
+    &.facebook {
+        background-color: lighten($clr-facebook, 5%);
+    }
+
+    .container {
+        position: relative;
+    }
 
     i {
         color: #777;
         font-size: 16px;
-        line-height: 50px;
+        line-height: 40px;
         position: absolute;
 
         &.fa-folder {
@@ -218,7 +271,12 @@ ul, ol {
     }
 
     .links {
-        padding-left: 56px;
+        padding-left: 36px;
+    }
+
+    .list-toggle {
+        float: right;
+        padding-right: 20px;
     }
 
     input {
@@ -238,19 +296,23 @@ ul, ol {
     ul {
         li {
             display: inline-block;
-            margin-right: 40px;
         }
     }
 
     a {
-        color: #000;
         display: inline-block;
         font-size: 12px;
         opacity: 0.75;
+        padding: 0 20px;
 
         &:hover {
             opacity: 1;
             text-decoration: none;
+        }
+
+        &.active {
+            background-color: rgba(#fff, 0.1);
+            opacity: 1;
         }
     }
 }
@@ -321,8 +383,7 @@ ul, ol {
 
     &.empty {
         background-color: transparent;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px dotted #ddd;
         color: #AAAAAA;
         cursor: default;
     }
