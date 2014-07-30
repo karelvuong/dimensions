@@ -1,18 +1,18 @@
 {
-  "name": "Social Media Dimensions",
+  "name": "Dimensions",
   "description": "Karel Vuong",
   "version": "0.0.1",
-  "homepage": "https://github.com/karelvuong/karel.ca",
+  "homepage": "https://github.com/karelvuong/dimensions",
   "author": {
     "name": "Karel Vuong",
-    "url": "http://karelvuong.github.io/"
+    "url": "http://karel.ca/"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karelvuong/karel.ca.git"
+    "url": "git://github.com/karelvuong/dimensions.git"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
